@@ -1,4 +1,4 @@
-package br.com.questions.config;
+package br.com.passcheck.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.questions.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.passcheck.controllers"))
                 .paths(PathSelectors.any())
                 .build();
     }

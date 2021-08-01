@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -15,7 +16,7 @@ public class CheckRepeatedCharacterStrategy implements ValidPasswordStrategy{
 
     @Override
     public boolean isValid(String password) {
-        List<Character> duplicateItemList = password.chars()
+        List<Character> duplicateItemList = password.toUpperCase(Locale.ROOT).chars()
                 .mapToObj(e -> (char)e)
                 .collect(Collectors.toList());
 
