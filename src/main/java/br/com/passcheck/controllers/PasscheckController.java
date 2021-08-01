@@ -24,7 +24,7 @@ public class PasscheckController {
     @ApiOperation(value = "Valida Password")
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Boolean save(@RequestBody()  @Valid PasswordDto passwordDto) {
+    public Boolean isValid(@RequestBody()  @Valid PasswordDto passwordDto) {
         MDC.clear();
         MDC.put("Valida Password: ", String.valueOf(UUID.randomUUID()));
         return service.checkPassword(passwordDto.getPassword());

@@ -56,7 +56,7 @@ public class PasswordServiceImpl implements PasswordService{
     private boolean isSpecialCharacters(String password) {
         boolean specialCaract = false;
 
-        List<String> caracteresEspecialList = Arrays.asList("!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+");
+        List<String> caracteresEspecialList = Arrays.asList("!", "@", "#", "$", "%", "^", "&", "*", "(",")", "-", "+");
         CharSequence[] cs = caracteresEspecialList.toArray(new CharSequence[caracteresEspecialList.size()]);
 
         for (CharSequence a : cs) {
