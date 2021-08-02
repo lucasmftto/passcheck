@@ -1,0 +1,171 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Passcheck",
+		"_postman_id": "f79d6fb1-09fa-2bec-3c96-18a06ddd3be2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "checkPassword Sucesso",
+			"request": {
+				"url": "http://localhost:8080/checkPassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"password\": \"LuFt5@mre\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "checkPassword Erro \"\"",
+			"request": {
+				"url": "http://localhost:8080/checkPassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"password\": \"\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "checkPassword Erro \"aa\"",
+			"request": {
+				"url": "http://localhost:8080/checkPassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"password\": \"aa\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "checkPassword Erro \"ab\"",
+			"request": {
+				"url": "http://localhost:8080/checkPassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"password\": \"ab\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "checkPassword Erro \"AAAbbbCc\"",
+			"request": {
+				"url": "http://localhost:8080/checkPassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"password\": \"AAAbbbCc\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "checkPassword Erro \"AbTp9!foo\"",
+			"request": {
+				"url": "http://localhost:8080/checkPassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"password\": \"AbTp9!foo\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "checkPassword Erro \"AbTp9!foA\"",
+			"request": {
+				"url": "http://localhost:8080/checkPassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"password\": \"AbTp9!foA\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "checkPassword Erro \"AbTp9 fok\"",
+			"request": {
+				"url": "http://localhost:8080/checkPassword/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"password\": \"AbTp9 fok\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
