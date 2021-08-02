@@ -14,8 +14,8 @@
 
 
 #### Detalhes da solução:
-    Markup : - Utilizado apenas recursos do Java, por isso não utilizei regex;
-    Markup : - A ideia foi utilizar o pattern Strategy, para organizar os requisitos;
-    Markup : - Com a adoção strategy, podemos vizualizar alguns principios de SOLID onde fechado para alteração e aberto para extenção;
-    Markup : - Caso for necessario  incluir novos requisitos, só implemetar a interface ValidPasswordStrategy
+    * Utilizado apenas recursos do Java, por isso não utilizei regex;
+    * A ideia foi utilizar o pattern Strategy, para organizar os requisitos;
+    * Com a adoção strategy, podemos vizualizar alguns principios de SOLID onde fechado para alteração e aberto para extenção;
+    * Caso for necessario  incluir novos requisitos, só implemetar a interface ValidPasswordStrategy
     
