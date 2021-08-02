@@ -17,5 +17,6 @@
     * Utilizado apenas recursos do Java, por isso não utilizei regex;
     * A ideia foi utilizar o pattern Strategy, para organizar os requisitos;
     * Com a adoção strategy, podemos vizualizar alguns principios de SOLID onde fechado para alteração e aberto para extenção;
-    * Caso for necessario  incluir novos requisitos, só implemetar a interface ValidPasswordStrategy
+    * Caso for necessario  incluir novos requisitos, só implemetar a interface ValidPasswordStrategy;
+    * Foi escrito os testes unitarios para validar o serviço/logicar e os testes da API(Controller)
     
