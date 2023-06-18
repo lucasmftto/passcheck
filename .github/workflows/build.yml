@@ -37,6 +37,7 @@ jobs:
         run: mvn -B test
   #Build's job
   build:
+    needs: tests
     name: Build
     #Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
