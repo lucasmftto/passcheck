@@ -5,10 +5,10 @@ on:
   #Trigger the workflow on push from the main branch
   push:
     branches:
-      - main
+      - "master"
   pull_request:
     branches:
-      - main
+      - "master"
 jobs:
   #Test's job
   tests:
@@ -37,6 +37,7 @@ jobs:
         run: mvn -B test
   #Build's job
   build:
+    needs: tests
     name: Build
     #Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
